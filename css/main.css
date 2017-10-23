@@ -4,7 +4,7 @@ body{
 }
 
 a{
-	color: #000;
+	color: rgba(0,0,0,0.7);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -12,4 +12,63 @@ a:hover,
 a:focus{
 	text-decoration: none;
 	color: #000;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+hr{
+	max-width: 300px;
+	border-top: 5px solid;
+}
+
+p{
+	padding-top: 8px;
+}
+
+.intro{
+	width: 100%;
+	padding: 100px 0;
+	min-height: 100vh;
+	position: relative;
+}
+
+.intro .intro-bg{
+	background: url(../img/intro-bg.jpeg) no-repeat center;
+	background-size: cover;
+	/*fixed make backgroung parallax*/
+	background-attachment: fixed;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top:0;
+	opacity: 0.4;
+}
+
+.intro .intro-body{
+	width: 100%;
+	position: absolute;
+	padding-top: 10vh;
+}
+
+.intro .intro-body .brand-heading{
+	font-size: 50px;
+}
+
+.btn-circle{
+	width: 65px;
+	height: 65px;
+	margin-top: 70px;
+	border:2px solid rgba(0,0,0,0.7);
+	border-radius: 100%;
+	font-size: 40px;
+	background: transparent;
+}
+
+#about{
+	padding: 100px;
 }
