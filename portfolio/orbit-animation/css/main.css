@@ -1,0 +1,123 @@
+body{
+	background-color: black;
+}
+
+.container{
+	background:url(../img/galaxy.png) no-repeat;
+	height: 800px;
+	width: 1350px;
+}
+
+#sun{
+	position: inherit;
+	background: orange;
+	height: 180px;
+	width: 180px;
+	margin:250px auto;
+
+	border-radius: 100%;
+	background: radial-gradient(#f5c313, #ec7e08);
+	box-shadow: 0 0 50px #f5c91a;
+	animation:sunfire 2s infinite alternate;
+}
+
+/*the orbit of the earth, use border the see it*/
+#earthOrbit{
+	width: 900px;
+	height: 800px;
+	transform: scaleY(0.5);
+	/*border: solid 3px red;*/
+	position: relative;
+	border-radius: 50%;
+	margin: -700px auto
+}
+
+#earth{
+	width: 100%;
+	height: 100%;
+	animation: earth 10s infinite linear;
+	transform-origin: 50% 50%;
+}
+
+#conterearth{
+	width: 100px;
+	height: 100px;
+	animation: cearth 10s infinite linear;
+}
+
+#earthimg{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform: scaleX(0.5);
+}
+
+#moonOrbit{
+	width: 280px;
+	height: 250px;	
+	position: absolute;
+	border-radius: 50%;
+	left: -60px;
+	top: -40px;
+	/*border: solid 3px red;*/
+}
+
+#moon{
+	width: 100%;
+	height: 100%;
+	animation: cearth 10s infinite linear;
+}
+
+#contermoon{
+	/*border: solid 1px yellow;*/
+	width: 100px;
+	height: 100px;
+	animation: earth 10s infinite linear;
+}
+
+#moonimg{
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	left: 20px;
+	position: absolute;
+	transform: scaleX(0.5);
+}
+
+
+
+
+
+
+
+
+
+/*both earth & cearth animation make oval orbit*/
+
+@keyframes earth{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}
+
+@keyframes cearth{
+	from{transform: rotateZ(360deg);}
+	to{transform: rotateZ(0deg);}
+}
+
+@keyframes sunfire{
+	from{
+		box-shadow: 0 0 50px #f5c91a;
+	}
+	to{
+		box-shadow: 0 0 100px #f5c91a;
+	}
+}
+
+@keyframes spin{
+	from{
+		transform: rotate(360deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}

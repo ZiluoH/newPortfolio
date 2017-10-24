@@ -1,0 +1,142 @@
+body{
+	background-color: #4b3d3d;
+}
+
+.container{
+	width: 60%;
+	background-color: hsl(194, 80%, 61%);
+}
+
+
+.game_title{
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
+	margin-left: auto;
+}
+
+.deposit_section{
+	margin-top: 20px;
+	float: right;
+}
+
+/*deposit button*/
+.deposit_btn{
+	display: block;
+	margin: 5px 0 5px auto;
+	border: none;
+	border-radius: 3px;
+	background-color: #1be1d1;
+	box-shadow: 0 3px #95a5a6;
+}
+
+.deposit_btn:hover{
+	background-color: #2ecc71;
+}
+
+.deposit_btn:active{
+	background-color: #2ecc71;
+	box-shadow: 0 1px #95a5a6;
+	transform: translateY(2px);
+}
+
+
+.diceimg{
+    margin: auto;
+}
+
+
+#dice1, #dice2, #dice3{
+	display: inherit;
+	margin: auto;
+}
+
+.smallOrbig{
+	display: inline;
+}
+
+.smallbtn, .bigbtn{
+	font-size: 27px;
+	width: 35%;
+	margin-left: 10%;
+	min-width: 130px;
+	height: 52.4px;
+	margin-top: 15px;
+}
+
+.bet_input{
+	margin-top: 9px;
+}
+
+
+.play_btn{
+	margin-top: 4px;
+	animation: spin 10s linear infinite;
+	animation-play-state: paused;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.play_btn:hover{
+	animation-play-state: running;
+}
+
+
+.result{
+	margin-top: 10px;
+}
+
+
+
+.balance{
+	margin-top: 10px;
+}
+
+button:focus{
+	outline: 0;
+}
+
+@media only screen and (max-width:591px){
+	.smallbtn, .bigbtn{
+		margin-left: 25%;
+	}
+}
+
+@keyframes spin {
+  100% {transform: rotate(5turn); }
+}
+
+/*test*/
+/*.wrap {width:200px; margin:auto;  z-index:1;}
+
+.msg {
+  color: whitesmoke;
+  text-align:center;
+  font-family: 'Bree Serif', Courier, monospaced;
+  font-size:3.5em;
+  width:200px;
+  position:absolute;
+  margin:55px 0 0 2px;
+  pointer-events: none; 
+}
+
+.sticker {
+  width:200px;
+  height:200px;
+  position:absolute;
+  background: url(https://dl.dropbox.com/u/1143870/i/sticker.png) top center no-repeat; 
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+/*  animation-play-state: paused; 
+}
+*/
+/*.sticker:hover {
+   Toggle our animation play state to running when we are hovering over our sticker 
+  animation-play-state: running;
+}*/
+
+
