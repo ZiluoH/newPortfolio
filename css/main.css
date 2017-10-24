@@ -72,3 +72,20 @@ p{
 #about{
 	padding: 100px;
 }
+
+.portfolio-item{
+	position: relative;
+}
+
+.portfolio-item-info{
+	/*opacity: 0;*/
+	position: absolute;
+	width: 93%;
+	height: 100%;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.portfolio-item-info p{
+	
+}
