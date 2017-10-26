@@ -75,10 +75,11 @@ p{
 
 .portfolio-item{
 	position: relative;
+	margin-top: 30px;
 }
 
 .portfolio-item-info{
-	/*opacity: 0;*/
+	opacity: 0;
 	position: absolute;
 	width: 93%;
 	height: 100%;
