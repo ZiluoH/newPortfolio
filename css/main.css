@@ -84,6 +84,22 @@ p{
 	line-height: 30px;
 }
 
+.about-bg{
+	background: url(../img/about-bg.jpeg) no-repeat center;
+	background-size: cover;
+	/*fixed make backgroung parallax*/
+	background-attachment: fixed;
+	height:300px;
+	width:100%;
+	position:relative;
+	top:0;
+	opacity: 0.3;
+}
+
+.about-bg .about-title{
+	text-align: center;
+	color: #000000;
+}
 .portfolio-item{
 	position: relative;
 	margin-top: 30px;
