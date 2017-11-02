@@ -79,6 +79,10 @@ p{
 	padding: 100px;
 }
 
+#about{
+	position: relative;
+}
+
 #about p{
 	font-size: 18px;
 	line-height: 30px;
@@ -89,11 +93,12 @@ p{
 	background-size: cover;
 	/*fixed make backgroung parallax*/
 	background-attachment: fixed;
-	height:300px;
+	height:100%;
 	width:100%;
-	position:relative;
+	position:absolute;
 	top:0;
-	opacity: 0.3;
+	left: 0;
+	opacity: 0.5;
 }
 
 .about-bg .about-title{
