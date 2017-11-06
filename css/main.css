@@ -30,6 +30,33 @@ p{
 	padding-top: 8px;
 }
 
+#navbar{
+	height: 80px;
+margin: 15px 0 0 0;
+}
+
+#navbar[data-fixed="fixed"]{
+	position: fixed;
+	top: 0;
+	background-color: #000000;
+	margin-top: 0;
+	height: 50px;
+}
+
+#navbar a{
+	font-size: 22px;
+}
+
+#navbar[data-fixed="fixed"] a{
+	font-size: 15px;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.88);
+}
+
+#navbar[data-fixed="fixed"] button{
+	color: #ffffff;
+}
+
 .intro{
 	width: 100%;
 	padding: 100px 0;
