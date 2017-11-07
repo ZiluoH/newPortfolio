@@ -31,8 +31,8 @@ p{
 }
 
 #navbar{
-	height: 80px;
-margin: 15px 0 0 0;
+	height: 60px;
+	margin: 15px 0 0 0;
 }
 
 #navbar[data-fixed="fixed"]{
@@ -40,7 +40,7 @@ margin: 15px 0 0 0;
 	top: 0;
 	background-color: #000000;
 	margin-top: 0;
-	height: 50px;
+	height: 56px;
 }
 
 #navbar a{
@@ -55,6 +55,14 @@ margin: 15px 0 0 0;
 
 #navbar[data-fixed="fixed"] button{
 	color: #ffffff;
+}
+
+#navbar ul{
+	margin-top: 0;
+}
+
+.navbar-collapse{
+	border: none;
 }
 
 .intro{
